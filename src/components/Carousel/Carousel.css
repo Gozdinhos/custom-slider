@@ -1,0 +1,68 @@
+.carousel-component {
+  width: 100vw;
+  padding: 0 0 3em 7.5em;
+  position: relative;
+}
+
+.carousel-wrapper {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.carousel-items {
+  position: relative;
+  width: 50em;
+  height: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  transition: all 150ms ease-in-out;
+}
+
+.carousel-item {
+  display: block;
+  height: 100%;
+}
+
+.navigation-button {
+  width: 3.125em;
+  height: 3.125em;
+  border: 1px solid #31135e;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #31135e;
+  font-weight: 900;
+  margin: 2.5em 1em 0em 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation-button:hover {
+  background-color: #31135e;
+  transition: 0.15s ease-in-out;
+}
+
+.navigation-button:active {
+  background-color: #31135ed2;
+}
+.navigation-button:hover path {
+  fill: #fff;
+}
+
+.navigation-button:active path {
+  fill: #fff;
+}
+
+.faded {
+  filter: grayscale(100%) opacity(30%);
+}
+
+@media screen and (max-width: 600px) {
+  .carousel-component {
+    padding: 0 0 0 2.5em;
+  }
+}

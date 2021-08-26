@@ -1,0 +1,72 @@
+.card-wrapper {
+  font-family: 'Mulish', sans-serif;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: Mulish;
+  color: #000000;
+}
+
+.card-image-wrapper {
+  width: 24em;
+  height: 13.75em;
+}
+
+.card-image-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 2em;
+  margin-top: 2.25em;
+  margin-bottom: 1.25em;
+}
+
+.subtitle {
+  font-weight: normal;
+  font-size: 1.125em;
+  margin-bottom: 0.875em;
+  cursor: pointer;
+}
+
+.subtitle:hover {
+  font-weight: 800;
+  font-size: 1.125em;
+}
+
+.card-button {
+  margin-top: 0.625em;
+  font-weight: 600;
+  font-size: 1em;
+  text-align: center;
+  color: #31135e;
+  border: 1px solid #31135e;
+  border-radius: 0.25em;
+  background-color: #fff;
+  padding: 0.625em 0;
+  width: 8.5em;
+  cursor: pointer;
+}
+
+.card-button:hover {
+  border: 2px solid #340d70;
+  transition: 0.15s ease-in-out;
+}
+.card-button:active {
+  border: 2px solid #340d70;
+}
+
+@media screen and (max-width: 600px) {
+  .card-image-wrapper {
+    width: 15.5em;
+    height: 8.875em;
+  }
+
+  .title {
+    font-size: 1.875em;
+  }
+}
